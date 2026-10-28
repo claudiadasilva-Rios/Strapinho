@@ -20,39 +20,51 @@
 
 <body>
 
-  <!-- Menu principal - Navbar -->
+  <!-- 
+  Menu principal - Navbar 
+  Referências: https://www.w3schools.com/bootstrap5/bootstrap_navbar.php
+  OBS: Vamos substitulir ``
+  -->
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
     <div class="container">
+
+      <!-- A "brand" (marca) pode ser um nome ou uma imagem. -->
       <a class="navbar-brand" href="javascript:void(0)"><i class="bi bi-postcard-heart-fill text-warning"></i></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="mynavbar">
         <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="javascript:void(0)">Conteúdo</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Conteúdo</a></li>
 
-          <!-- Dropdown -->
+          <!-- 
+          Dropdown
+          Referências: https://www.w3schools.com/bootstrap5/bootstrap_navbar.php
+                       https://www.w3schools.com/bootstrap5/bootstrap_dropdowns.php 
+          -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Sobre</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Sobre o site</a></li>
-              <li><a class="dropdown-item" href="#">Sobre o autor</a></li>
-              <li><a class="dropdown-item" href="#">Políticas de privacidade</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Sobre o site</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Sobre o autor</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Políticas de privacidade</a></li>
               <li><hr class="dropdown-divider"></hr></li>
-              <li><a class="dropdown-item" href="#">Faça contato</a></li>
+              <li><a class="dropdown-item" href="javascript:void(0)">Faça contato</a></li>
             </ul>
           </li>
 
         </ul>
+
+        <!-- 
+        Formulário de pesquisa
+        Referências: https://www.w3schools.com/bootstrap5/bootstrap_forms.php
+        -->
         <form class="d-flex">
           <input class="form-control me-2" type="text" placeholder="Search">
           <button class="btn btn-primary" type="button">Search</button>
         </form>
+
       </div>
     </div>
   </nav>
